@@ -13,6 +13,7 @@ module.exports = function (config) {
 
     plugins: [
       'karma-jasmine',
+      'karma-jasmine-html-reporter',
       // other plugins
     ],
 
