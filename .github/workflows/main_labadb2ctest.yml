@@ -27,7 +27,7 @@ jobs:
           npm run build --if-present
           npm run test --if-present
           npm audit fix --force
-          npm update
+          npm install karma-jasmine --save-dev
 
       - name: Zip artifact for deployment
         run: zip release.zip ./* -r
