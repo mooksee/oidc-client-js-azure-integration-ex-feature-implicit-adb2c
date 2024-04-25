@@ -14,6 +14,7 @@ module.exports = function (config) {
     plugins: [
       'karma-jasmine',
       'karma-jasmine-html-reporter',
+      'karma-chrome-launcher',
       // other plugins
     ],
 
