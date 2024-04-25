@@ -22,20 +22,14 @@ module.exports = function (config) {
       'jasmine',
     ],
 
-    browsers: ['ChromeHeadless'],
-
-    customLaunchers: {
-      ChromeHeadless: {
-        base: 'Chrome',
-        flags: [
-          '--no-sandbox',
-          '--headless',
-          '--disable-gpu',
-          '--remote-debugging-port=9222',
-        ],
-      },
+    browsers: ['HeadlessChrome'],
+      customLaunchers:{
+        HeadlessChrome:{
+          base: 'ChromeHeadless',
+          flags: ['--no-sandbox']
+        }
     },
-  
+   
     client: {
       clearContext: false // leave Jasmine Spec Runner output visible in browser
     },
