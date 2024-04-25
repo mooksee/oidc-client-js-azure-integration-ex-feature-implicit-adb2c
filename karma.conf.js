@@ -5,10 +5,6 @@ module.exports = function (config) {
   config.set({
     // ... other configuration options
 
-    files: [
-      'src/**/*.spec.js',
-    ],
-
     plugins: [
       'karma-jasmine',
       'karma-jasmine-html-reporter',
