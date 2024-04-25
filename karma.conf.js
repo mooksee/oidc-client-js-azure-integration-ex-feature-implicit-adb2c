@@ -5,7 +5,9 @@ module.exports = function (config) {
   config.set({
     // ... other configuration options
 
-    files: ['test.js'],
+    files: [
+      'src/**/*.spec.js',
+    ],
 
     plugins: [
       'karma-jasmine',
