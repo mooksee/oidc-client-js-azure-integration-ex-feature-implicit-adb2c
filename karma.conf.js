@@ -5,11 +5,7 @@ module.exports = function (config) {
   config.set({
     // ... other configuration options
 
-    files: [
-      // other files
-      'node_modules/jasmine-core/lib/jasmine-core/jasmine.js',
-      // other files
-    ],
+    files: ['test.js'],
 
     plugins: [
       'karma-jasmine',
@@ -21,7 +17,7 @@ module.exports = function (config) {
     frameworks: [
       'jasmine',
     ],
-
+    
     browsers: ['HeadlessChrome'],
       customLaunchers:{
         HeadlessChrome:{
