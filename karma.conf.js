@@ -18,6 +18,10 @@ module.exports = function (config) {
       // other plugins
     ],
 
+    frameworks: [
+      'jasmine',
+    ],
+
     browsers: ['ChromeHeadless'],
 
     customLaunchers: {
