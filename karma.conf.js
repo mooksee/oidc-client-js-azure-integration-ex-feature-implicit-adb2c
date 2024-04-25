@@ -16,12 +16,12 @@ module.exports = function (config) {
       'jasmine',
     ],
     
-    browsers: ['HeadlessChrome'],
-      customLaunchers:{
-        HeadlessChrome:{
-          base: 'ChromeHeadless',
-          flags: ['--no-sandbox']
-        }
+    browsers: ['ChromeHeadlessCI'],
+    customLaunchers: {
+      ChromeHeadlessCI: {
+        base: 'ChromeHeadless',
+        flags: ['--no-sandbox']
+      }
     },
    
     client: {
